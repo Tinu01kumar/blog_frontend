@@ -139,7 +139,7 @@ const Login = ({ isUserAuthenticated }) => {
   const toggleSignup = () => {
     account === "signup" ? toggleAccount("login") : toggleAccount("signup");
   };
- let x=" ";
+  let x = " ";
   return (
     <Component>
       <Box>
@@ -183,29 +183,30 @@ const Login = ({ isUserAuthenticated }) => {
             </SignupButton>
           </Wrapper>
         ) : (
-
           <Wrapper>
-          
-           
+         
             <TextField
-            id="filled-basic"
-            variant="standard"
-            onChange={(e) => onInputChange(e)}
              
+             
+             
+              onChange={(e) => onInputChange(e)}
               name="name"
               label="Enter Name"
+              variant="filled"
+              id="filled-basic"
             />
             <TextField
-            id="filled-basic"
-            variant="standard"
-            onChange={(e) => onInputChange(e)}
+            
+              onChange={(e) => onInputChange(e)}
               name="username"
               label="Enter Username"
+              variant="filled"
+              id="filled-basic"
             />
             <TextField
+            variant="filled"
             id="filled-basic"
-            variant="standard"
-            onChange={(e) => onInputChange(e)}
+              onChange={(e) => onInputChange(e)}
               name="password"
               label="Enter Password"
             />
@@ -232,11 +233,3 @@ const Login = ({ isUserAuthenticated }) => {
 };
 
 export default Login;
-
-
-
-
-
-
-
-
